@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Internal CSS Example</title>
   <style>
+      /* Class Selector */
+  .highlight {
+    background-color: yellow;
+  }
+
+  /* ID Selector */
+  #unique {
+    color: red;
+  }
+
+  /* Descendant Selector */
+  div p {
+    color: green;
+  }
+
+  /* Child Selector */
+  ul > li {
+    font-weight: bold;
+  }
      p {
     color: green;
   }
@@ -18,7 +37,7 @@
     font-weight: bold;
   }
   table {
-    width: 100%;
+    width: 20%;
     border-collapse: collapse;
   }
 
@@ -35,12 +54,111 @@
   tr:nth-child(even) {
     background-color: #f9f9f9;
   }
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+
+  li {
+    color: red;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  /* :hover */
+  a:hover {
+    color: red;
+  }
+
+  /* :focus */
+  input:focus {
+    background-color: lightyellow;
+  }
+
+  /* :nth-child() */
+  ul li:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+
+  /* :not() */
+  div:not(.special) {
+    background-color: gray;
+  }
+    /* ::before */
+    p::before {
+    content: "Note: ";
+    font-weight: bold;
+    color: blue;
+  }
+
+  /* ::after */
+  p::after {
+    content: " (End of the paragraph)";
+    font-style: italic;
+  }
+
+  /* ::first-letter */
+  p::first-letter {
+    font-size: 2em;
+    color: red;
+  }
+
+  /* ::first-line */
+  p::first-line {
+    font-variant: small-caps;
+    color: green;
+  }
   </style>
 </head>
 <body>
   <h1>Welcome to Internal CSS!</h1>
   <p>This is an example of internal CSS.</p>
   <div>This paragraph has green text</div>
+  <table>
+    <tr>
+        <th>Headigng 1</th>
+        <th>Heading 2</th>
+    </tr>
+    <tr>
+        <td>Hello</td>
+        <td>World</td>
+    </tr>
+  </table>
+  <ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+  </ul>
   
+  <ol>
+    <li>First Item</li>
+    <li>Second Item</li>
+  </ol>
+
+  <div id="unique">
+    This is a div with an ID selector applied.
+  </div>
+  
+  <p class="highlight">This paragraph has a class applied for highlighting.</p>
+  
+  <div>
+    <p>This paragraph is a descendant of a div and styled accordingly.</p>
+  </div>
+  
+  <ul>
+    <li>This is a child list item with bold text.</li>
+    <li>This is another child list item.</li>
+  </ul>
+  <a href="#">Hover over this link to change color.</a>
+<input type="text" placeholder="Focus on me to change background color">
+<ul>
+  <li>First Item</li>
+  <li>Second Item</li>
+  <li>Third Item</li>
+  <li>Fourth Item</li>
+</ul>
+<div class="special">Special Div</div>
+<div>Normal Div</div>
 </body>
 </html>
