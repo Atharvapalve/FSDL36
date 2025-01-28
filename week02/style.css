@@ -1,0 +1,115 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* 1. Color (Text Color) */
+  p {
+    color: green;
+  }
+  
+  /* 2. Background (Background Color) */
+  div {
+    background-color: lightblue;
+  }
+  
+  /* 3. Fonts (Font Family, Size, and Weight) */
+  h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  /* 4. Tables (Table Styling) */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* 5. Lists (Unordered/Ordered List Styling) */
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  li {
+    color: blue;
+  }
+  
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  
+  /* 6. CSS3 Selectors */
+  .highlight {
+    background-color: yellow;
+  }
+  
+  #unique {
+    color: red;
+  }
+  
+  div p {
+    color: green;
+  }
+  
+  ul > li {
+    font-weight: bold;
+  }
+  
+  /* 7. Pseudo-Classes */
+  a:hover {
+    color: red;
+  }
+  
+  input:focus {
+    background-color: lightyellow;
+  }
+  
+  ul li:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+  
+  div:not(.special) {
+    background-color: gray;
+  }
+  
+  /* 8. Pseudo-Elements */
+  p::before {
+    content: "Note: ";
+    font-weight: bold;
+    color: blue;
+  }
+  
+  p::after {
+    content: " (End of the paragraph)";
+    font-style: italic;
+  }
+  
+  p::first-letter {
+    font-size: 2em;
+    color: red;
+  }
+  
+  p::first-line {
+    font-variant: small-caps;
+    color: green;
+  }
+  
