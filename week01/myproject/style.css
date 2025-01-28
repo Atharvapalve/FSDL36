@@ -1,0 +1,116 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    display: inline-block;
+    font-size: 36px;
+    margin-left: 20px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    float: right;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .hero {
+    background: url('https://via.placeholder.com/1500x600?text=Coffee+Shop+Image') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+  }
+  
+  .hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 24px;
+  }
+  
+  .menu {
+    padding: 50px 0;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .menu h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+  }
+  
+  .menu-item h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .about {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .contact {
+    padding: 50px 0;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
