@@ -1,0 +1,80 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a6c0fe, #f68084);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Password Input Styling */
+.password-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+/* Strength Indicator Bar */
+.strength-indicator {
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Strength Text Styling */
+.strength-text {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Color indicators for password strength */
+.weak {
+    background-color: #ff4d4d;
+    width: 25%;
+}
+
+.medium {
+    background-color: #ffb84d;
+    width: 50%;
+}
+
+.strong {
+    background-color: #4dff4d;
+    width: 100%;
+}

@@ -1,0 +1,79 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5a5d1, #ffb3c1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Voting Button Styling */
+.vote-btn {
+    padding: 12px 25px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.vote-btn:hover {
+    background-color: #e85d44;
+}
+
+/* Result Section Styling */
+.result {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#voteResults {
+    margin-top: 20px;
+}
+
+/* Displaying Vote Results */
+.vote-result {
+    margin-bottom: 15px;
+}
+
+.vote-count {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.vote-percentage {
+    font-size: 1rem;
+    color: #666;
+}
