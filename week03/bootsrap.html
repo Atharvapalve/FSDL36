@@ -12,56 +12,63 @@
 <body>
 
     <!-- Hero Section -->
-    <header class="hero bg-dark text-white text-center py-5">
-        <div class="hero-content">
+    <header class="hero bg-primary text-white text-center py-5">
+        <div class="container">
             <h1 class="display-4">Welcome to Café Delights</h1>
-            <p class="lead">Experience the finest coffee and pastries</p>
+            <p class="lead">The finest coffee, delicious pastries, and more</p>
             <a href="#menu" class="btn btn-light btn-lg">Explore Our Menu</a>
         </div>
     </header>
 
     <!-- About Us Section -->
     <section id="about" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="mb-4">About Us</h2>
-            <p>At Café Delights, we provide an unforgettable coffee experience. Enjoy fresh coffee, a variety of teas, and delicious pastries in a relaxing atmosphere.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About Us</h2>
+                    <p>At Café Delights, we believe in offering the finest coffee beans, freshly baked pastries, and a cozy environment. Whether you need a morning pick-me-up or a place to relax, we have you covered. Join us for a delightful experience!</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/500" class="img-fluid rounded" alt="Cafe Image">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Menu Section -->
     <section id="menu" class="py-5">
         <div class="container text-center">
-            <h2 class="mb-5">Our Menu</h2>
+            <h2>Our Menu</h2>
             <div class="row">
                 <!-- Coffee Section -->
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-lg">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
                         <img src="https://via.placeholder.com/300" class="card-img-top" alt="Coffee">
                         <div class="card-body">
                             <h5 class="card-title">Cappuccino</h5>
-                            <p class="card-text">Rich espresso, steamed milk, and a layer of foam.</p>
+                            <p class="card-text">A rich and creamy coffee made with espresso and steamed milk.</p>
                             <button class="btn btn-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
                 <!-- Pastry Section -->
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-lg">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
                         <img src="https://via.placeholder.com/300" class="card-img-top" alt="Pastry">
                         <div class="card-body">
                             <h5 class="card-title">Chocolate Croissant</h5>
-                            <p class="card-text">Freshly baked croissant filled with rich chocolate.</p>
+                            <p class="card-text">Buttery and flaky pastry filled with rich chocolate.</p>
                             <button class="btn btn-primary">Order Now</button>
                         </div>
                     </div>
                 </div>
                 <!-- Tea Section -->
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-lg">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
                         <img src="https://via.placeholder.com/300" class="card-img-top" alt="Tea">
                         <div class="card-body">
                             <h5 class="card-title">Green Tea</h5>
-                            <p class="card-text">A refreshing green tea that is rich in antioxidants.</p>
+                            <p class="card-text">A refreshing, antioxidant-packed green tea to keep you energized.</p>
                             <button class="btn btn-primary">Order Now</button>
                         </div>
                     </div>
@@ -70,8 +77,17 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-dark text-white text-center py-4">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to book a table? Get in touch with us!</p>
+            <a href="mailto:info@cafedelights.com" class="btn btn-primary">Email Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2023 Café Delights | All Rights Reserved</p>
     </footer>
 
