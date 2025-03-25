@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palindrome Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Palindrome Checker</h1>
+    <button onclick="checkPalindrome()">Check Palindrome</button>
+  </div>
+
+  <script>
+    function checkPalindrome() {
+      // Prompt the user for input
+      const inputString = prompt('Enter a string to check if it is a palindrome:');
+
+      // Check if the input is valid
+      if (inputString === null || inputString.trim() === '') {
+        alert('Please input a valid string.');
+        return;
+      }
+
+      // Normalize the input by removing non-alphanumeric characters and converting to lowercase
+      const cleanedString = inputString.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
+      // Reverse the cleaned string
+      const reversedString = cleanedString.split('').reverse().join('');
+
+      // Check if the original cleaned string matches the reversed string
+      if (cleanedString === reversedString) {
+        alert(`'${inputString}' is a palindrome.`);
+      } else {
+        alert(`'${inputString}' is not a palindrome.`);
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
