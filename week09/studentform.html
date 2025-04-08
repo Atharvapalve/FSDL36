@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="studentApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Records</title>
+  <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+  <style>
+    .error { color: red; }
+    .valid { color: green; }
+  </style>
+</head>
+<body ng-controller="StudentController">
+
+  <h2>Student Registration</h2>
+
+  <!-- Student Registration Form -->
+  <form name="studentForm" ng-submit="submitForm()" novalidate>
+    <label for="name">Student Name:</label>
+    <input type="text" id="name" ng-model="student.name" name="name" required ng-class="{'valid': studentForm.name.$valid, 'error': studentForm.name.$invalid}" />
+    <span class="error" ng-show="studentForm.name.$touched && studentForm.name.$invalid">Name is required.</span>
+    <br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" ng-model="student.age" name="age" required min="5" max="100" ng-class="{'valid': studentForm.age.$valid, 'error': studentForm.age.$invalid}" />
+    <span class="error" ng-show="studentForm.age.$touched && studentForm.age.$invalid">Age is required and should be between 5 and 100.</span>
+    <br><br>
+
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" ng-model="student.grade" name="grade" required ng-class="{'valid': studentForm.grade.$valid, 'error': studentForm.grade.$invalid}" />
+    <span class="error" ng-show="studentForm.grade.$touched && studentForm.grade.$invalid">Grade is required.</span>
+    <br><br>
+
+    <button type="submit" ng-disabled="studentForm.$invalid">Submit</button>
+  </form>
+
+  <h3>Student Records:</h3>
+  <ul>
+    <li ng-repeat="student in students">
+      <strong>Name:</strong> {{ student.name }} | <strong>Age:</strong> {{ student.age }} | <strong>Grade:</strong> {{ student.grade }}
+    </li>
+  </ul>
+
+  <script>
+    angular.module('studentApp', [])
+      .controller('StudentController', function($scope) {
+        // Initialize an empty array for students
+        $scope.students = [];
+        
+        // Create a function to handle form submission
+        $scope.submitForm = function() {
+          // If form is valid, add the student data to the array
+          if ($scope.studentForm.$valid) {
+            $scope.students.push({
+              name: $scope.student.name,
+              age: $scope.student.age,
+              grade: $scope.student.grade
+            });
+            // Reset the form
+            $scope.studentForm.$setPristine();
+            $scope.studentForm.$setUntouched();
+            $scope.student = {}; // Clear the student model
+          } else {
+            alert('Please fill out the form correctly.');
+          }
+        };
+      });
+  </script>
+
+</body>
+</html>
