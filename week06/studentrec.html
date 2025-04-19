@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Record Application</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="studentApp">
+
+  <div ng-controller="studentController">
+    <h1>Student Record</h1>
+
+    <form name="studentForm" ng-submit="submitForm()" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" ng-model="student.name" name="name" required />
+      <span ng-show="studentForm.name.$touched && studentForm.name.$invalid">Name is required.</span>
+      <br><br>
+
+      <label for="rollNumber">Roll Number:</label>
+      <input type="text" id="rollNumber" ng-model="student.rollNumber" name="rollNumber" required />
+      <span ng-show="studentForm.rollNumber.$touched && studentForm.rollNumber.$invalid">Roll Number is required.</span>
+      <br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" ng-model="student.age" name="age" min="18" max="60" required />
+      <span ng-show="studentForm.age.$touched && studentForm.age.$invalid">Age must be between 18 and 60.</span>
+      <br><br>
+
+      <button type="submit" ng-disabled="studentForm.$invalid">Submit</button>
+    </form>
+
+    <h3>Student Details:</h3>
+    <p>Name: {{ student.name }}</p>
+    <p>Roll Number: {{ student.rollNumber }}</p>
+    <p>Age: {{ student.age }}</p>
+
+  </div>
+
+  <script>
+    var app = angular.module('studentApp', []);
+    
+    app.controller('studentController', function($scope) {
+      // Initialize student object
+      $scope.student = {};
+
+      // Submit form data
+      $scope.submitForm = function() {
+        if ($scope.studentForm.$valid) {
+          alert("Form Submitted!\nName: " + $scope.student.name + "\nRoll Number: " + $scope.student.rollNumber + "\nAge: " + $scope.student.age);
+        }
+      };
+    });
+  </script>
+
+</body>
+</html>

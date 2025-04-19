@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World with AngularJS</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+
+  <div ng-controller="myController">
+    <h1>Hello {{ name }}!</h1>
+    <input type="text" ng-model="name" placeholder="Enter your name" />
+  </div>
+
+  <script>
+    // Define AngularJS module and controller
+    var app = angular.module('myApp', []);
+    app.controller('myController', function($scope) {
+      $scope.name = "World"; // Default value
+    });
+  </script>
+
+</body>
+</html>
