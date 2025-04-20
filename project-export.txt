@@ -1,0 +1,5022 @@
+PROJECT EXPORT
+
+PROJECT STRUCTURE:
+
+📁 cia1
+  📄 first.html
+📁 cia2
+  📄 second.html
+📁 cia3
+  📁 file-upload
+    📁 uploads
+    📄 app.js
+    📄 package.json
+  📁 web-scraper
+    📄 package.json
+    📄 scraper.js
+📁 miniproject
+  📁 client
+    📁 public
+      📄 index.html
+      📄 manifest.json
+      📄 robots.txt
+    📁 src
+      📁 components
+        📄 Calculator.jsx
+        📄 Facts.jsx
+        📄 Footer.jsx
+        📄 Hero.jsx
+        📄 MapSection.jsx
+        📄 Tips.jsx
+      📁 data
+        📄 centers.json
+        📄 facts.json
+        📄 tips.json
+      📄 App.css
+      📄 App.js
+      📄 App.test.js
+      📄 index.css
+      📄 index.js
+      📄 reportWebVitals.js
+      📄 setupTests.js
+    📄 .gitignore
+    📄 package.json
+    📄 postcss.config.js
+    📄 README.md
+    📄 tailwing.config.js
+📁 week01
+  📁 myproject
+    📄 index.html
+    📄 style.css
+  📄 first.html
+📁 week02
+  📁 hallticket
+    📄 hall_ticket.html
+    📄 style.css
+  📄 external.html
+  📄 first.html
+  📄 inline.html
+  📄 internal.html
+  📄 style.css
+📁 week03
+  📄 bootsrap.html
+  📄 script.js
+  📄 style.css
+📁 week04
+  📁 agecalculator
+    📄 agecalculator.html
+    📄 script.js
+    📄 style.css
+  📁 countdowntimer
+    📄 countdowntimer.html
+    📄 script.js
+    📄 style.css
+  📁 passwordstrengthchecker
+    📄 passwordstrengthchecker.html
+    📄 script.js
+    📄 style.css
+  📁 pollingsystem
+    📄 pollingsystem.html
+    📄 script.js
+    📄 style.css
+  📁 todolist
+    📄 script.js
+    📄 style.css
+    📄 todolist.html
+📁 week05
+  📁 news app
+    📄 news.html
+    📄 script.js
+    📄 style.css
+  📁 weather app
+    📄 script.js
+    📄 style.css
+    📄 weather.html
+📁 week06
+  📁 my-app
+    📁 public
+      📄 index.html
+      📄 manifest.json
+      📄 robots.txt
+    📁 src
+      📄 App.css
+      📄 App.js
+      📄 App.test.js
+      📄 index.css
+      📄 index.js
+      📄 reportWebVitals.js
+      📄 setupTests.js
+    📄 .gitignore
+    📄 package.json
+    📄 README.md
+  📁 react-demo
+    📁 public
+      📄 index.html
+      📄 manifest.json
+      📄 robots.txt
+    📁 src
+      📄 App.css
+      📄 App.js
+      📄 App.test.js
+      📄 index.css
+      📄 index.js
+      📄 reportWebVitals.js
+      📄 setupTests.js
+    📄 .gitignore
+    📄 package.json
+    📄 README.md
+  📄 helloworld.html
+  📄 studentrec.html
+📁 week09
+  📄 studentform.html
+📁 week10
+  📄 app.js
+  📄 callbackExample.js
+  📄 eventLoopExample.js
+  📄 mongoApp.js
+📄 .gitignore
+📄 package.json
+📄 README.md
+
+FILES:
+
+=== .gitignore ===
+
+node_modules
+
+
+========================================
+
+=== README.md ===
+
+# FSDL36
+
+========================================
+
+=== cia1/first.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Webpage Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.8rem;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Content Section */
+        .content {
+            background-color: #f4f4f4;
+            padding: 30px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        My Simple Webpage
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="content">
+        <p>Welcome to my webpage! This is the main content section where you can add text, images, and more.</p>
+    </div>
+
+    <footer>
+        &copy; 2025 MyWebsite | All Rights Reserved
+    </footer>
+
+</body>
+</html>
+
+========================================
+
+=== cia2/second.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palindrome Checker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .container {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background-color: #007bff;
+      color: #fff;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Palindrome Checker</h1>
+    <button onclick="checkPalindrome()">Check Palindrome</button>
+  </div>
+
+  <script>
+    function checkPalindrome() {
+      // Prompt the user for input
+      const inputString = prompt('Enter a string to check if it is a palindrome:');
+
+      // Check if the input is valid
+      if (inputString === null || inputString.trim() === '') {
+        alert('Please input a valid string.');
+        return;
+      }
+
+      // Normalize the input by removing non-alphanumeric characters and converting to lowercase
+      const cleanedString = inputString.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
+      // Reverse the cleaned string
+      const reversedString = cleanedString.split('').reverse().join('');
+
+      // Check if the original cleaned string matches the reversed string
+      if (cleanedString === reversedString) {
+        alert(`'${inputString}' is a palindrome.`);
+      } else {
+        alert(`'${inputString}' is not a palindrome.`);
+      }    }  </script></body></html>
+
+========================================
+
+=== cia3/file-upload/app.js ===
+
+// app.js
+const express = require('express');
+const multer = require('multer');
+const path = require('path');
+const fs = require('fs');
+
+const app = express();
+
+// Ensure the uploads directory exists; if not, create it.
+const uploadDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir);
+}
+
+// Configure storage for multer
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, uploadDir);
+  },
+  filename: (req, file, cb) => {
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+    cb(null, file.fieldname + '-' + uniqueSuffix + path.extname(file.originalname));
+  }
+});
+
+// Initialize multer with storage options.
+const upload = multer({ storage });
+
+// Serve static files from the uploads folder on the "/uploads" path.
+app.use('/uploads', express.static(uploadDir));
+
+// Define a POST route for file uploads. 'file' is the name of the form field.
+app.post('/upload', upload.single('file'), (req, res) => {
+  if (!req.file) {
+    return res.status(400).send('No file uploaded.');
+  }
+  res.send(`File uploaded successfully! <a href="/uploads/${req.file.filename}">View File</a>`);
+});
+
+// GET route to display upload form and links for file viewing.
+app.get('/', (req, res) => {
+  // Read files from the uploads directory
+  fs.readdir(uploadDir, (err, files) => {
+    if (err) {
+      return res.status(500).send('Error reading uploaded files.');
+    }
+
+    // Create a list of file links if files exist
+    const fileList = files.map(file => `<li><a href="/uploads/${file}">${file}</a></li>`).join('');
+    res.send(`
+      <h2>File Uploader</h2>
+      <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file" required />
+        <button type="submit">Upload</button>
+      </form>
+      <h3>Uploaded Files</h3>
+      <ul>${fileList}</ul>
+    `);
+  });
+});
+
+// Start the server.
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
+});
+
+========================================
+
+=== cia3/file-upload/package.json ===
+
+{
+  "name": "file-upload",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^1.4.5-lts.2"
+  }
+}
+
+
+========================================
+
+=== cia3/web-scraper/package.json ===
+
+{
+  "name": "web-scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "cheerio": "^1.0.0"
+  }
+}
+
+
+========================================
+
+=== cia3/web-scraper/scraper.js ===
+
+// scraper.js
+const axios = require('axios');
+const cheerio = require('cheerio');
+
+const url = 'https://news.ycombinator.com/';
+
+async function scrapeData() {
+  try {
+    const { data } = await axios.get(url);
+    const $ = cheerio.load(data);
+    const results = [];
+
+    $('.athing').each((i, element) => {
+      const title = $(element).find('.titleline > a').text();
+      const link = $(element).find('.titleline > a').attr('href');
+      results.push({ title, link });
+    });
+
+    console.log(results);
+  } catch (error) {
+    console.error('Error scraping data:', error);
+  }
+}
+
+scrapeData();
+
+
+========================================
+
+=== miniproject/client/.gitignore ===
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+========================================
+
+=== miniproject/client/README.md ===
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+========================================
+
+=== miniproject/client/package.json ===
+
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
+    "chart.js": "^4.4.9",
+    "framer-motion": "^12.7.4",
+    "leaflet": "^1.9.4",
+    "leaflet-defaulticon-compatibility": "^0.1.2",
+    "postcss-cli": "^11.0.1",
+    "react": "^19.1.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.5.1",
+    "react-scripts": "5.0.1",
+    "recharts": "^2.15.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4"
+  }
+}
+
+
+========================================
+
+=== miniproject/client/postcss.config.js ===
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+    theme: { extend: {} },
+    plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+  };
+
+========================================
+
+=== miniproject/client/public/index.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+
+========================================
+
+=== miniproject/client/public/manifest.json ===
+
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+
+
+========================================
+
+=== miniproject/client/public/robots.txt ===
+
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+
+========================================
+
+=== miniproject/client/src/App.css ===
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+========================================
+
+=== miniproject/client/src/App.js ===
+
+import React from 'react';
+import Hero from './components/Hero';
+import Facts from './components/Facts';
+import Calculator from './components/Calculator';
+import Tips from './components/Tips';
+import MapSection from './components/MapSection';
+import Footer from './components/Footer';
+
+function App() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <Hero />
+      <Facts />
+      <Calculator />
+      <MapSection />
+      <Tips />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
+
+========================================
+
+=== miniproject/client/src/App.test.js ===
+
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+
+========================================
+
+=== miniproject/client/src/components/Calculator.jsx ===
+
+import React, { useState } from 'react';
+import { Bar } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  BarElement,
+  CategoryScale,
+  LinearScale,
+  Tooltip,
+  Legend
+} from 'chart.js';
+
+ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
+
+const Calculator = () => {
+  const [input, setInput] = useState({
+    phones: 0,
+    laptops: 0,
+    chargers: 0,
+    tablets: 0
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInput({ ...input, [name]: parseInt(value || 0) });
+  };
+
+  const calculateTotal = () => {
+    return (
+      input.phones * 0.2 +
+      input.laptops * 2.5 +
+      input.chargers * 0.3 +
+      input.tablets * 0.8
+    ).toFixed(2);
+  };
+
+  const chartData = {
+    labels: ['Phones', 'Laptops', 'Chargers', 'Tablets'],
+    datasets: [
+      {
+        label: 'E-Waste (kg)',
+        data: [
+          input.phones * 0.2,
+          input.laptops * 2.5,
+          input.chargers * 0.3,
+          input.tablets * 0.8
+        ],
+        backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#9333ea'],
+        borderRadius: 8
+      }
+    ]
+  };
+
+  return (
+    <section id="calculator" className="py-20 bg-green-50 px-6">
+      <div className="text-center mb-10">
+        <h2 className="text-3xl font-bold text-green-900">E-Waste Calculator</h2>
+        <p className="text-green-700 mt-2">Estimate your e-waste impact below 👇</p>
+      </div>
+
+      <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-6 items-start">
+        <div className="space-y-4">
+          {['phones', 'laptops', 'chargers', 'tablets'].map((item) => (
+            <div key={item}>
+              <label className="block mb-1 capitalize text-green-800">
+                {item}:
+              </label>
+              <input
+                type="number"
+                min="0"
+                name={item}
+                value={input[item]}
+                onChange={handleChange}
+                className="w-full p-2 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              />
+            </div>
+          ))}
+
+          <div className="mt-6 p-4 bg-white rounded shadow text-center text-xl text-green-900 font-semibold">
+            Total E-Waste: {calculateTotal()} kg
+          </div>
+        </div>
+
+        <div className="bg-white rounded-xl p-4 shadow-md">
+          <Bar data={chartData} />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Calculator;
+
+
+========================================
+
+=== miniproject/client/src/components/Facts.jsx ===
+
+import React, { useEffect } from 'react';
+import facts from '../data/facts.json';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+const Facts = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
+  return (
+    <section id="facts" className="py-20 bg-white">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-green-900">E-Waste Facts</h2>
+        <p className="text-green-700 mt-2">Here’s what you should know about electronic waste.</p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 max-w-6xl mx-auto">
+        {facts.map((fact) => (
+          <div
+            key={fact.id}
+            className="bg-green-100 rounded-xl shadow-md p-6 hover:shadow-lg transition"
+            data-aos="fade-up"
+          >
+            <div className="text-5xl mb-4">{fact.icon}</div>
+            <h3 className="text-xl font-semibold text-green-900 mb-2">{fact.title}</h3>
+            <p className="text-green-800">{fact.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Facts;
+
+
+========================================
+
+=== miniproject/client/src/components/Footer.jsx ===
+
+import React, { useEffect, useState } from 'react';
+import facts from '../data/facts.json';
+import { FaGithub, FaEnvelope } from 'react-icons/fa';
+
+const Footer = () => {
+  const [currentFact, setCurrentFact] = useState('');
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex(prev => (prev + 1) % facts.length);
+      setCurrentFact(facts[index]);
+    }, 5000); // change every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [index]);
+
+  return (
+    <footer className="bg-green-900 text-white py-8 px-6 mt-16">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="text-sm">
+          <p>&copy; {new Date().getFullYear()} E-Waste Awareness</p>
+          <p>Built with ❤️ by You (or your team)</p>
+        </div>
+
+        <div className="flex items-center gap-4 text-lg">
+          <a
+            href="https://github.com/your-repo" // replace with your real repo link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-green-300"
+          >
+            <FaGithub />
+          </a>
+          <a href="mailto:your@email.com" className="hover:text-green-300">
+            <FaEnvelope />
+          </a>
+        </div>
+      </div>
+
+      {/* Rotating fact */}
+      <div className="text-center mt-6 text-green-200 italic">
+        <p>💡 Did you know? <span className="font-medium">{currentFact.fact}</span></p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
+
+
+========================================
+
+=== miniproject/client/src/components/Hero.jsx ===
+
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FaArrowDown } from 'react-icons/fa';
+
+const Hero = () => {
+  return (
+    <section className="h-screen bg-gradient-to-br from-green-200 to-blue-100 flex flex-col justify-center items-center text-center px-4">
+      <motion.h1
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="text-4xl md:text-6xl font-bold text-green-900"
+      >
+        Welcome to E-Waste Awareness
+      </motion.h1>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1 }}
+        className="mt-4 text-lg md:text-xl text-green-800 max-w-xl"
+      >
+        Learn how your old electronics impact the planet — and how you can help reduce e-waste today.
+      </motion.p>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.2, duration: 1 }}
+        className="mt-10"
+      >
+        <a href="#facts" className="inline-flex items-center text-green-700 hover:text-green-900 transition">
+          <span className="mr-2">Scroll Down</span>
+          <FaArrowDown className="animate-bounce" />
+        </a>
+      </motion.div>
+    </section>
+  );
+};
+
+export default Hero;
+
+
+========================================
+
+=== miniproject/client/src/components/MapSection.jsx ===
+
+import React, { useState } from 'react';
+import centers from '../data/centers.json';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet-defaulticon-compatibility';
+
+const MapSection = () => {
+  const [filter, setFilter] = useState('All');
+
+  const filteredCenters = filter === 'All'
+    ? centers
+    : centers.filter(center => center.type === filter);
+
+  return (
+    <section id="map" className="py-20 bg-white px-6">
+      <div className="text-center mb-6">
+        <h2 className="text-3xl font-bold text-green-900">Find Recycling Centers</h2>
+        <p className="text-green-700 mt-2">Click markers to see center names</p>
+      </div>
+
+      <div className="flex justify-center space-x-4 mb-4 flex-wrap">
+        {['All', 'NGO', 'Government', 'Store'].map(type => (
+          <button
+            key={type}
+            onClick={() => setFilter(type)}
+            className={`px-4 py-2 rounded-full font-medium ${
+              filter === type
+                ? 'bg-green-600 text-white'
+                : 'bg-green-100 text-green-800 hover:bg-green-200'
+            }`}
+          >
+            {type}
+          </button>
+        ))}
+      </div>
+
+      <div className="max-w-5xl mx-auto h-[400px]">
+        <MapContainer
+          center={[22.5937, 78.9629]} // Center of India
+          zoom={4.5}
+          scrollWheelZoom={false}
+          className="h-full w-full rounded-lg shadow-md"
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://osm.org/">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          {filteredCenters.map(center => (
+            <Marker key={center.id} position={[center.lat, center.lng]}>
+              <Popup>
+                <strong>{center.name}</strong><br />
+                Type: {center.type}
+              </Popup>
+            </Marker>
+          ))}
+        </MapContainer>
+      </div>
+    </section>
+  );
+};
+
+export default MapSection;
+
+
+
+========================================
+
+=== miniproject/client/src/components/Tips.jsx ===
+
+import React from 'react';
+import tips from '../data/tips.json';
+import { FaRecycle, FaWrench, FaDonate } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+
+const iconMap = {
+  "Donate Old Devices": <FaDonate className="text-3xl text-green-600" />,
+  "Repair Instead of Replace": <FaWrench className="text-3xl text-yellow-600" />,
+  "Recycle Batteries Separately": <FaRecycle className="text-3xl text-blue-600" />
+};
+
+const Tips = () => {
+  return (
+    <section id="tips" className="py-20 bg-green-50 px-6">
+      <div className="text-center mb-10">
+        <h2 className="text-3xl font-bold text-green-900">Repair • Reuse • Recycle Tips</h2>
+        <p className="text-green-700 mt-2">Practical things you can do today</p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {tips.map((tip, index) => (
+          <motion.div
+            key={index}
+            className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow"
+            whileHover={{ scale: 1.05 }}
+          >
+            <div className="flex items-center space-x-4 mb-3">
+              {iconMap[tip.title] || <FaRecycle className="text-3xl text-green-600" />}
+              <h3 className="text-lg font-semibold text-green-800">{tip.title}</h3>
+            </div>
+            <p className="text-gray-700">{tip.description}</p>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Tips;
+
+
+========================================
+
+=== miniproject/client/src/data/centers.json ===
+
+[
+    {
+      "id": 1,
+      "name": "Green Earth Recycling",
+      "lat": 19.076,
+      "lng": 72.8777,
+      "type": "NGO"
+    },
+    {
+      "id": 2,
+      "name": "E-Reuse Center",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "type": "Store"
+    },
+    {
+      "id": 3,
+      "name": "Govt Recycling Hub",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "type": "Government"
+    }
+  ]
+  
+
+========================================
+
+=== miniproject/client/src/data/facts.json ===
+
+[
+    {
+      "id": 1,
+      "icon": "♻️",
+      "title": "50 Million Tons",
+      "description": "Over 50 million tons of e-waste are produced globally each year."
+    },
+    {
+      "id": 2,
+      "icon": "🔋",
+      "title": "Toxic Materials",
+      "description": "E-waste contains harmful materials like lead and mercury."
+    },
+    {
+      "id": 3,
+      "icon": "🌱",
+      "title": "Only 17% Recycled",
+      "description": "Only 17% of global e-waste is properly recycled."
+    },
+    {
+      "id": 4,
+      "icon": "📱",
+      "title": "Short Device Lifespan",
+      "description": "Phones and laptops are often discarded within 2–3 years."
+    },
+    {
+      "id": 5,
+      "icon": "💡",
+      "title": "Awareness is Key",
+      "description": "Most people are unaware of how to properly dispose of electronics."
+    }
+  ]
+  
+
+========================================
+
+=== miniproject/client/src/data/tips.json ===
+
+[
+    {
+      "title": "Donate Old Devices",
+      "description": "Many NGOs accept functional electronics and give them to underprivileged communities."
+    },
+    {
+      "title": "Repair Instead of Replace",
+      "description": "Get your old gadgets repaired instead of buying new ones. Saves money and the environment!"
+    },
+    {
+      "title": "Remove Personal Data",
+      "description": "Before recycling or donating, wipe all your personal info from the device."
+    },
+    {
+      "title": "Recycle Batteries Separately",
+      "description": "Dispose of lithium batteries properly at designated centers—they’re toxic if dumped."
+    },
+    {
+      "title": "Buy Refurbished",
+      "description": "Choose refurbished electronics to reduce demand for new manufacturing."
+    }
+  ]
+  
+
+========================================
+
+=== miniproject/client/src/index.css ===
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+========================================
+
+=== miniproject/client/src/index.js ===
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';             // Tailwind output
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+========================================
+
+=== miniproject/client/src/reportWebVitals.js ===
+
+const reportWebVitals = onPerfEntry => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
+    });
+  }
+};
+
+export default reportWebVitals;
+
+
+========================================
+
+=== miniproject/client/src/setupTests.js ===
+
+// jest-dom adds custom jest matchers for asserting on DOM nodes.
+// allows you to do things like:
+// expect(element).toHaveTextContent(/react/i)
+// learn more: https://github.com/testing-library/jest-dom
+import '@testing-library/jest-dom';
+
+
+========================================
+
+=== miniproject/client/tailwing.config.js ===
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+    theme: { extend: {} },
+    plugins: [],
+  };
+
+========================================
+
+=== package.json ===
+
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+<<<<<<< HEAD
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2",
+    "react-router-dom": "^7.4.1"
+=======
+    "react-router-dom": "^7.3.0"
+>>>>>>> 909bda2 (week6)
+  }
+}
+
+
+========================================
+
+=== week01/first.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+</head>
+<body>
+    
+   <p>first program</p>
+   <h1>This is second line</h1>
+   <h2>This is third line</h2>
+   <h3>This is fourth line</h3>
+   <h4>This is fifth line</h4>
+   <h5>This is sixth line</h5>
+   <h6>This is seventh line</h6>
+   <a href="https://www.wikipedia.org/">Wikipedia link</a>
+   <img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png" alt="">
+   <ul>
+    <li>Atharva</li>
+    <li>Atharva</li>
+    <li>Atharva</li>
+   </ul>
+   <ol>
+    <li>Dikshant</li>
+    <li>Dikshant</li>
+    <li>Dikshant</li>
+   </ol>
+    <input type="number">
+    <button>Submit</button>
+    <table>
+        <tr>
+            <th>Person 1</th>
+            <th>Person 2</th>
+            <th>Person 3</th>
+          </tr>
+        <hr>
+        <tr>
+          <td>Emil</td>
+          <td>Tobias</td>
+          <td>Linus</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+          </tr>
+      </table>
+      <strong>Information Technology</strong><br>
+      <em>Information Technology</em>
+</body>
+</html>
+
+========================================
+
+=== week01/myproject/index.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Café Delight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Café Delight</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome to Café Delight!</h2>
+      <p>Your cozy spot for delicious coffee and fresh pastries.</p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <h3>Coffee</h3>
+          <p>Espresso, Latte, Cappuccino, and more!</p>
+        </div>
+        <div class="menu-item">
+          <h3>Pastries</h3>
+          <p>Croissants, Muffins, Cakes, and more!</p>
+        </div>
+        <div class="menu-item">
+          <h3>Teas</h3>
+          <p>Green Tea, Chai, Herbal Teas, and more!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a family-owned café committed to serving the finest coffee and pastries in a warm and welcoming atmosphere.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Visit us at:</p>
+      <address>
+        <p>123 Coffee St., Brewtown, CA</p>
+        <p>Phone: (123) 456-7890</p>
+      </address>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Café Delight. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+========================================
+
+=== week01/myproject/style.css ===
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    display: inline-block;
+    font-size: 36px;
+    margin-left: 20px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    float: right;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .hero {
+    background: url('https://via.placeholder.com/1500x600?text=Coffee+Shop+Image') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+  }
+  
+  .hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 24px;
+  }
+  
+  .menu {
+    padding: 50px 0;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .menu h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+  }
+  
+  .menu-item h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .about {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .contact {
+    padding: 50px 0;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
+
+========================================
+
+=== week02/external.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Styling Example</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Welcome to the CSS Styling Example!</h1>
+
+  <p>This paragraph is styled using external CSS and has a green text color.</p>
+
+  <div>
+    <p>This div has a light blue background color.</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+      </tr>
+      <tr>
+        <td>Row 2, Cell 1</td>
+        <td>Row 2, Cell 2</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <ul>
+    <li>First item in unordered list</li>
+    <li>Second item in unordered list</li>
+    <li>Third item in unordered list</li>
+  </ul>
+
+  <ol>
+    <li>First item in ordered list</li>
+    <li>Second item in ordered list</li>
+    <li>Third item in ordered list</li>
+  </ol>
+
+  <a href="#">Hover over this link to see the hover effect!</a>
+
+  <input type="text" placeholder="Focus on me to see the background change" />
+
+  <div class="highlight">
+    This div has the 'highlight' class applied, so it has a yellow background.
+  </div>
+
+  <div id="unique">
+    This div has the unique ID applied, making the text color red.
+  </div>
+
+  <p class="special">This paragraph has the "special" class and will not have the gray background.</p>
+  <div class="special">This is a special div and won't have the gray background either.</div>
+
+  <p>This paragraph demonstrates the use of pseudo-elements like ::before and ::after.</p>
+
+</body>
+</html>
+
+
+========================================
+
+=== week02/first.html ===
+
+
+
+========================================
+
+=== week02/hallticket/hall_ticket.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Hall Ticket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .ticket {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 100px;
+        }
+        .header h1 {
+            margin: 10px 0 5px;
+            font-size: 24px;
+            color: #333;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #555;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        .details h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #333;
+        }
+        .details p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #555;
+        }
+        .instructions {
+            font-size: 14px;
+            color: #777;
+            margin-top: 20px;
+        }
+        .signature {
+            text-align: right;
+            margin-top: 20px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="header">
+            <img src="https://fcrit.ac.in/img/fcritlogo.png" alt="University Logo">
+            <h1>University Name</h1>
+            <h2>Examination Hall Ticket</h2>
+        </div>
+        <div class="details">
+            <h3>Student Details</h3>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Roll Number:</strong> 123456</p>
+            <p><strong>Course:</strong> Computer Science</p>
+        </div>
+        <div class="details">
+            <h3>Examination Details</h3>
+            <p><strong>Subject:</strong> Data Structures</p>
+            <p><strong>Date:</strong> 28th January 2025</p>
+            <p><strong>Time:</strong> 10:00 AM - 1:00 PM</p>
+            <p><strong>Venue:</strong> Room 205, Building A</p>
+        </div>
+        <div class="instructions">
+            <p><strong>Instructions:</strong> Please carry your ID card and report 30 minutes before the exam.</p>
+        </div>
+        <div class="signature">
+            <p>Authorized Signature</p>
+        </div>
+    </div>
+</body>
+</html>
+
+========================================
+
+=== week02/hallticket/style.css ===
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.hall-ticket {
+  width: 70%;
+  max-width: 900px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+header .logo {
+  width: 100px;
+  height: auto;
+}
+
+header .title {
+  text-align: right;
+}
+
+header .title h1 {
+  font-size: 36px;
+  color: #4CAF50;
+  margin-bottom: 5px;
+}
+
+header .title h2 {
+  font-size: 18px;
+  color: #666;
+}
+
+.ticket-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.student-info, .exam-info {
+  width: 48%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+  font-size: 20px;
+  color: #fff;
+  background-color: #4CAF50;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+strong {
+  font-weight: bold;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #333;
+}
+
+footer p {
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .ticket-info {
+      flex-direction: column;
+  }
+
+  .student-info, .exam-info {
+      width: 100%;
+  }
+
+  header .title h1 {
+      font-size: 32px;
+  }
+
+  header .title h2 {
+      font-size: 16px;
+  }
+}
+
+
+========================================
+
+=== week02/inline.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="color: red; background-color: lightblue; font-family: Arial, sans-serif;">
+        This is a div with inline CSS for color, background, and font.
+      </div>
+      <p style="color: green;">This text is green.</p>
+      <div style="background-color: yellow;">This div has a yellow background.</div>
+      <p style="font-family: 'Times New Roman', serif; font-size: 20px; font-weight: bold;">
+        This paragraph has a custom font, size, and bold text.
+      </p>
+      <table style="width: 100%; border: 1px solid black;">
+        <tr style="background-color: #f2f2f2;">
+          <th style="padding: 8px; text-align: left;">Header 1</th>
+          <th style="padding: 8px; text-align: left;">Header 2</th>
+        </tr>
+        <tr>
+          <td style="padding: 8px; text-align: left;">Row 1, Cell 1</td>
+          <td style="padding: 8px; text-align: left;">Row 1, Cell 2</td>
+        </tr>
+      </table>
+      <ul style="list-style-type: square; padding-left: 20px;">
+        <li style="color: blue;">Item 1</li>
+        <li style="color: red;">Item 2</li>
+      </ul>
+      <ol style="list-style-type: circle; padding-left: 20px;">
+        <li style="color: purple;">First Item</li>
+        <li style="color: orange;">Second Item</li>
+      </ol>
+      <div id="unique" style="color: darkblue;">This div uses inline CSS but not a traditional selector.</div>
+
+
+</body>
+</html>
+
+========================================
+
+=== week02/internal.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal CSS Example</title>
+  <style>
+      /* Class Selector */
+  .highlight {
+    background-color: yellow;
+  }
+
+  /* ID Selector */
+  #unique {
+    color: red;
+  }
+
+  /* Descendant Selector */
+  div p {
+    color: green;
+  }
+
+  /* Child Selector */
+  ul > li {
+    font-weight: bold;
+  }
+     p {
+    color: green;
+  }
+  div {
+    background-color: lightblue;
+  }
+  h1 {
+    color : red;
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  table {
+    width: 20%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f4f4f4;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+
+  li {
+    color: red;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  /* :hover */
+  a:hover {
+    color: red;
+  }
+
+  /* :focus */
+  input:focus {
+    background-color: lightyellow;
+  }
+
+  /* :nth-child() */
+  ul li:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+
+  /* :not() */
+  div:not(.special) {
+    background-color: gray;
+  }
+    /* ::before */
+    p::before {
+    content: "Note: ";
+    font-weight: bold;
+    color: blue;
+  }
+
+  /* ::after */
+  p::after {
+    content: " (End of the paragraph)";
+    font-style: italic;
+  }
+
+  /* ::first-letter */
+  p::first-letter {
+    font-size: 2em;
+    color: red;
+  }
+
+  /* ::first-line */
+  p::first-line {
+    font-variant: small-caps;
+    color: green;
+  }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Internal CSS!</h1>
+  <p>This is an example of internal CSS.</p>
+  <div>This paragraph has green text</div>
+  <table>
+    <tr>
+        <th>Headigng 1</th>
+        <th>Heading 2</th>
+    </tr>
+    <tr>
+        <td>Hello</td>
+        <td>World</td>
+    </tr>
+  </table>
+  <ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+  </ul>
+  
+  <ol>
+    <li>First Item</li>
+    <li>Second Item</li>
+  </ol>
+
+  <div id="unique">
+    This is a div with an ID selector applied.
+  </div>
+  
+  <p class="highlight">This paragraph has a class applied for highlighting.</p>
+  
+  <div>
+    <p>This paragraph is a descendant of a div and styled accordingly.</p>
+  </div>
+  
+  <ul>
+    <li>This is a child list item with bold text.</li>
+    <li>This is another child list item.</li>
+  </ul>
+  <a href="#">Hover over this link to change color.</a>
+<input type="text" placeholder="Focus on me to change background color">
+<ul>
+  <li>First Item</li>
+  <li>Second Item</li>
+  <li>Third Item</li>
+  <li>Fourth Item</li>
+</ul>
+<div class="special">Special Div</div>
+<div>Normal Div</div>
+</body>
+</html>
+
+
+========================================
+
+=== week02/style.css ===
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* 1. Color (Text Color) */
+  p {
+    color: green;
+  }
+  
+  /* 2. Background (Background Color) */
+  div {
+    background-color: lightblue;
+  }
+  
+  /* 3. Fonts (Font Family, Size, and Weight) */
+  h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  /* 4. Tables (Table Styling) */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* 5. Lists (Unordered/Ordered List Styling) */
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  li {
+    color: blue;
+  }
+  
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  
+  /* 6. CSS3 Selectors */
+  .highlight {
+    background-color: yellow;
+  }
+  
+  #unique {
+    color: red;
+  }
+  
+  div p {
+    color: green;
+  }
+  
+  ul > li {
+    font-weight: bold;
+  }
+  
+  /* 7. Pseudo-Classes */
+  a:hover {
+    color: red;
+  }
+  
+  input:focus {
+    background-color: lightyellow;
+  }
+  
+  ul li:nth-child(even) {
+    background-color: #f0f0f0;
+  }
+  
+  div:not(.special) {
+    background-color: gray;
+  }
+  
+  /* 8. Pseudo-Elements */
+  p::before {
+    content: "Note: ";
+    font-weight: bold;
+    color: blue;
+  }
+  
+  p::after {
+    content: " (End of the paragraph)";
+    font-style: italic;
+  }
+  
+  p::first-letter {
+    font-size: 2em;
+    color: red;
+  }
+  
+  p::first-line {
+    font-variant: small-caps;
+    color: green;
+  }
+  
+
+========================================
+
+=== week03/bootsrap.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Delights</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to Café Delights</h1>
+            <p class="lead">The finest coffee, delicious pastries, and more</p>
+            <a href="#menu" class="btn btn-light btn-lg">Explore Our Menu</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About Us</h2>
+                    <p>At Café Delights, we believe in offering the finest coffee beans, freshly baked pastries, and a cozy environment. Whether you need a morning pick-me-up or a place to relax, we have you covered. Join us for a delightful experience!</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/500" class="img-fluid rounded" alt="Cafe Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container text-center">
+            <h2>Our Menu</h2>
+            <div class="row">
+                <!-- Coffee Section -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Coffee">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <p class="card-text">A rich and creamy coffee made with espresso and steamed milk.</p>
+                            <button class="btn btn-primary">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pastry Section -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Pastry">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Croissant</h5>
+                            <p class="card-text">Buttery and flaky pastry filled with rich chocolate.</p>
+                            <button class="btn btn-primary">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tea Section -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Tea">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Tea</h5>
+                            <p class="card-text">A refreshing, antioxidant-packed green tea to keep you energized.</p>
+                            <button class="btn btn-primary">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to book a table? Get in touch with us!</p>
+            <a href="mailto:info@cafedelights.com" class="btn btn-primary">Email Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Café Delights | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+========================================
+
+=== week03/script.js ===
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+});
+
+
+========================================
+
+=== week03/style.css ===
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1200x600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+/* About Section */
+#about {
+    background-color: #f4f4f4;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Menu Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #333;
+    color: white;
+}
+
+#contact .btn {
+    margin-top: 20px;
+}
+
+/* Floating Action Button */
+.fab {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 2.5rem;
+    background-color: #25d366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.fab:hover {
+    background-color: #128c7e;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Hover Effects for Cards */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+========================================
+
+=== week04/agecalculator/agecalculator.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Age Calculator</h1>
+            <p>Enter your date of birth to calculate your age:</p>
+            <input type="date" id="dob" class="dob-input">
+            <button onclick="calculateAge()" class="calculate-btn">Calculate Age</button>
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+========================================
+
+=== week04/agecalculator/script.js ===
+
+function calculateAge() {
+    const dob = document.getElementById('dob').value;
+    if (!dob) {
+        alert('Please enter your date of birth.');
+        return;
+    }
+
+    const birthDate = new Date(dob);
+    const today = new Date();
+
+    let ageYears = today.getFullYear() - birthDate.getFullYear();
+    const ageMonths = today.getMonth() - birthDate.getMonth();
+    const ageDays = today.getDate() - birthDate.getDate();
+
+    if (ageMonths < 0 || (ageMonths === 0 && ageDays < 0)) {
+        ageYears--;
+    }
+
+    const ageMonthsFinal = (ageMonths + 12) % 12; // Adjust for months that may be negative
+    const ageDaysFinal = ageDays < 0 
+        ? new Date(today.getFullYear(), today.getMonth(), 0).getDate() + ageDays
+        : ageDays;
+
+    const resultText = `You are ${ageYears} years, ${ageMonthsFinal} months, and ${ageDaysFinal} days old.`;
+    const resultElement = document.getElementById('result');
+    resultElement.textContent = resultText;
+}
+
+
+========================================
+
+=== week04/agecalculator/style.css ===
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Input Styling */
+.dob-input {
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+.calculate-btn {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.calculate-btn:hover {
+    background-color: #45a049;
+}
+
+/* Result Styling */
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+
+========================================
+
+=== week04/countdowntimer/countdowntimer.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Countdown Timer</h1>
+            <p>Select the target date and time for the countdown:</p>
+            <input type="date" id="countdown-date" class="datetime-input">
+            <input type="time" id="countdown-time" class="datetime-input">
+            <button onclick="startCountdown()" class="countdown-btn">Start Countdown</button>
+            <button onclick="resetCountdown()" class="reset-btn">Reset Timer</button>
+            <p id="timer" class="timer-display"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+========================================
+
+=== week04/countdowntimer/script.js ===
+
+let countdownInterval;
+let countdownDate;
+
+function startCountdown() {
+    const dateInput = document.getElementById('countdown-date').value;
+    const timeInput = document.getElementById('countdown-time').value;
+
+    if (!dateInput || !timeInput) {
+        alert('Please select both date and time.');
+        return;
+    }
+
+    // Combine the date and time inputs into a single Date object
+    const selectedDate = new Date(dateInput + " " + timeInput);
+    countdownDate = selectedDate.getTime();
+
+    // Ensure the countdown doesn't restart if it's already running
+    if (countdownInterval) clearInterval(countdownInterval);
+
+    countdownInterval = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        if (distance < 0) {
+            clearInterval(countdownInterval);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+}
+
+function resetCountdown() {
+    clearInterval(countdownInterval);
+    document.getElementById("timer").innerHTML = "";
+    document.getElementById('countdown-date').value = '';
+    document.getElementById('countdown-time').value = '';
+}
+
+
+========================================
+
+=== week04/countdowntimer/style.css ===
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e7fff 0%, #93a3ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Timer Display Styling */
+#timer {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 20px 0;
+}
+
+/* Input Fields Styling */
+.datetime-input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Countdown Button Styling */
+.countdown-btn {
+    padding: 12px 25px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+}
+
+.countdown-btn:hover {
+    background-color: #e85d44;
+}
+
+/* Reset Button Styling */
+.reset-btn {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Increased space */
+}
+
+.reset-btn:hover {
+    background-color: #2980b9;
+}
+
+
+========================================
+
+=== week04/passwordstrengthchecker/passwordstrengthchecker.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Password Strength Checker</h1>
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" onkeyup="checkPasswordStrength()" class="password-input" placeholder="Enter your password">
+            <div id="strengthIndicator" class="strength-indicator"></div>
+            <p id="strengthText" class="strength-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+========================================
+
+=== week04/passwordstrengthchecker/script.js ===
+
+function checkPasswordStrength() {
+    const password = document.getElementById('password').value;
+    const strengthIndicator = document.getElementById('strengthIndicator');
+    const strengthText = document.getElementById('strengthText');
+    
+    let strength = 0;
+    
+    // Check password strength based on various conditions
+    if (password.length >= 8) {
+        strength += 1;
+    }
+    if (/[a-z]/.test(password)) {
+        strength += 1;
+    }
+    if (/[A-Z]/.test(password)) {
+        strength += 1;
+    }
+    if (/\d/.test(password)) {
+        strength += 1;
+    }
+    if (/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+        strength += 1;
+    }
+
+    // Display strength level and style based on strength value
+    if (strength === 0) {
+        strengthIndicator.className = 'strength-indicator';
+        strengthText.innerText = 'Password is too weak';
+        strengthText.style.color = 'red';
+    } else if (strength <= 2) {
+        strengthIndicator.className = 'strength-indicator weak';
+        strengthText.innerText = 'Weak Password';
+        strengthText.style.color = 'red';
+    } else if (strength === 3) {
+        strengthIndicator.className = 'strength-indicator medium';
+        strengthText.innerText = 'Medium Password';
+        strengthText.style.color = 'orange';
+    } else if (strength === 4) {
+        strengthIndicator.className = 'strength-indicator strong';
+        strengthText.innerText = 'Strong Password';
+        strengthText.style.color = 'green';
+    } else {
+        strengthIndicator.className = 'strength-indicator strong';
+        strengthText.innerText = 'Very Strong Password';
+        strengthText.style.color = 'green';
+    }
+}
+
+
+========================================
+
+=== week04/passwordstrengthchecker/style.css ===
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #a6c0fe, #f68084);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Password Input Styling */
+.password-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+/* Strength Indicator Bar */
+.strength-indicator {
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Strength Text Styling */
+.strength-text {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Color indicators for password strength */
+.weak {
+    background-color: #ff4d4d;
+    width: 25%;
+}
+
+.medium {
+    background-color: #ffb84d;
+    width: 50%;
+}
+
+.strong {
+    background-color: #4dff4d;
+    width: 100%;
+}
+
+
+========================================
+
+=== week04/pollingsystem/pollingsystem.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polling System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Polling System</h1>
+            <p>What is your favorite programming language?</p>
+            <form id="pollForm">
+                <label>
+                    <input type="radio" name="option" value="JavaScript"> JavaScript
+                </label><br>
+                <label>
+                    <input type="radio" name="option" value="Python"> Python
+                </label><br>
+                <label>
+                    <input type="radio" name="option" value="Java"> Java
+                </label><br>
+                <label>
+                    <input type="radio" name="option" value="C++"> C++
+                </label><br><br>
+                <button type="button" onclick="submitVote()" class="vote-btn">Vote</button>
+            </form>
+
+            <div id="result" class="result">
+                <h2>Vote Results</h2>
+                <p id="totalVotes">Total Votes: 0</p>
+                <div id="voteResults"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+========================================
+
+=== week04/pollingsystem/script.js ===
+
+let votes = {
+    JavaScript: 0,
+    Python: 0,
+    Java: 0,
+    "C++": 0  // Corrected C++ to be properly recognized
+};
+
+let totalVotes = 0;
+
+function submitVote() {
+    const options = document.getElementsByName('option');
+    let selectedOption = '';
+    for (let option of options) {
+        if (option.checked) {
+            selectedOption = option.value;
+            break;
+        }
+    }
+
+    if (selectedOption) {
+        // Update the vote count for the selected option
+        votes[selectedOption]++;
+        totalVotes++;
+
+        // Update the UI
+        updateResults();
+    } else {
+        alert('Please select an option!');
+    }
+}
+
+function updateResults() {
+    // Display total votes
+    document.getElementById('totalVotes').innerText = `Total Votes: ${totalVotes}`;
+
+    const voteResultsContainer = document.getElementById('voteResults');
+    voteResultsContainer.innerHTML = ''; // Clear previous results
+
+    // Create a simple result display for each option
+    for (let option in votes) {
+        const voteCount = votes[option];
+        const percentage = totalVotes === 0 ? 0 : (voteCount / totalVotes) * 100;
+
+        // Create the vote result section
+        const voteResult = document.createElement('div');
+        voteResult.classList.add('vote-result');
+        
+        const voteCountElem = document.createElement('div');
+        voteCountElem.classList.add('vote-count');
+        voteCountElem.innerText = `${option}: ${voteCount} votes`;
+
+        const votePercentageElem = document.createElement('div');
+        votePercentageElem.classList.add('vote-percentage');
+        votePercentageElem.innerText = `(${percentage.toFixed(2)}%)`;
+
+        voteResult.appendChild(voteCountElem);
+        voteResult.appendChild(votePercentageElem);
+        voteResultsContainer.appendChild(voteResult);
+    }
+}
+
+
+========================================
+
+=== week04/pollingsystem/style.css ===
+
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5a5d1, #ffb3c1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Voting Button Styling */
+.vote-btn {
+    padding: 12px 25px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.vote-btn:hover {
+    background-color: #e85d44;
+}
+
+/* Result Section Styling */
+.result {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#voteResults {
+    margin-top: 20px;
+}
+
+/* Displaying Vote Results */
+.vote-result {
+    margin-bottom: 15px;
+}
+
+.vote-count {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.vote-percentage {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+========================================
+
+=== week04/todolist/script.js ===
+
+function addTask() {
+    const taskInput = document.getElementById('taskInput');
+    const taskText = taskInput.value.trim();
+
+    if (taskText !== "") {
+        const taskList = document.getElementById('taskList');
+
+        const taskItem = document.createElement('li');
+        taskItem.classList.add('task-item');
+
+        const taskCheckbox = document.createElement('input');
+        taskCheckbox.type = 'checkbox';
+        taskCheckbox.onclick = toggleTaskCompletion;
+
+        const taskTextElement = document.createElement('span');
+        taskTextElement.classList.add('task-text');
+        taskTextElement.innerText = taskText;
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.classList.add('delete-btn');
+        deleteBtn.innerText = '×';
+        deleteBtn.onclick = deleteTask;
+
+        taskItem.appendChild(taskCheckbox);
+        taskItem.appendChild(taskTextElement);
+        taskItem.appendChild(deleteBtn);
+        taskList.appendChild(taskItem);
+
+        taskInput.value = ''; // Clear the input field
+    }
+}
+
+function toggleTaskCompletion(event) {
+    const taskTextElement = event.target.parentNode.querySelector('.task-text');
+    if (event.target.checked) {
+        taskTextElement.classList.add('completed');
+    } else {
+        taskTextElement.classList.remove('completed');
+    }
+}
+
+function deleteTask(event) {
+    const taskItem = event.target.parentNode;
+    taskItem.remove();
+}
+
+
+========================================
+
+=== week04/todolist/style.css ===
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Field Styling */
+.task-input {
+    width: 75%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;  /* Increase the margin-bottom to add space */
+}
+
+.task-input:focus {
+    border-color: #4CAF50;
+}
+
+/* Add Button Styling */
+.add-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+/* Task List Styling */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Task Item Styling */
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+    background-color: #e8f5e9;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.2);
+}
+
+/* Task Text Styling */
+.task-text {
+    font-size: 1rem;
+    color: #333;
+    flex: 1;
+}
+
+/* Task Completed Styling */
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    background-color: #e57373;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+========================================
+
+=== week04/todolist/todolist.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>To-Do List</h1>
+            <input type="text" id="taskInput" placeholder="Enter a task" class="task-input">
+            <button onclick="addTask()" class="add-btn">Add Task</button>
+            <ul id="taskList" class="task-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+========================================
+
+=== week05/news app/news.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-time News Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Real-Time News</h1>
+    <p>Get the latest news from around the world</p>
+  </header>
+
+  <section class="news-container" id="news-container">
+    <p>Loading news...</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Real-Time News</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+========================================
+
+=== week05/news app/script.js ===
+
+// Fetch news from News API and display them dynamically
+const newsContainer = document.getElementById('news-container');
+
+// Your News API key here (sign up at https://newsapi.org/ to get one)
+const apiKey = '5b3feb27378b49a98f8f91c85300fc91';
+const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+
+async function fetchNews() {
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    if (data.status === 'ok') {
+      displayNews(data.articles);
+    } else {
+      newsContainer.innerHTML = '<p>Failed to fetch news. Try again later.</p>';
+    }
+  } catch (error) {
+    console.error('Error fetching news:', error);
+    newsContainer.innerHTML = '<p>There was an error fetching the news.</p>';
+  }
+}
+
+function displayNews(articles) {
+  newsContainer.innerHTML = '';
+  articles.forEach((article) => {
+    const newsCard = document.createElement('div');
+    newsCard.classList.add('news-card');
+
+    const newsImage = article.urlToImage ? `<img src="${article.urlToImage}" alt="${article.title}">` : '';
+    const newsTitle = `<h2><a href="${article.url}" target="_blank">${article.title}</a></h2>`;
+    const newsDescription = `<p>${article.description || 'No description available.'}</p>`;
+
+    newsCard.innerHTML = newsImage + newsTitle + newsDescription;
+    newsContainer.appendChild(newsCard);
+  });
+}
+
+// Fetch the news when the page loads
+fetchNews();
+
+
+========================================
+
+=== week05/news app/style.css ===
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #2a9df4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+  
+  .news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px;
+    padding: 0 20px;
+  }
+  
+  .news-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.2s;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .news-card h2 {
+    font-size: 1.5em;
+    margin-top: 15px;
+  }
+  
+  .news-card p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  footer {
+    background-color: #2a9df4;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+========================================
+
+=== week05/weather app/script.js ===
+
+// Fetch weather from OpenWeatherMap API and display the results
+const weatherContainer = document.getElementById('weather-container');
+const cityInput = document.getElementById('city-input');
+const getWeatherButton = document.getElementById('get-weather');
+const weatherInfo = document.getElementById('weather-info');
+
+// Your OpenWeatherMap API key (sign up at https://openweathermap.org/ to get one)
+const apiKey = 'bb0498857a7f35fe68659e5d33a0cec1';
+const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
+
+async function fetchWeather(city) {
+  try {
+    const response = await fetch(`${apiUrl}${city}&appid=${apiKey}&units=metric`);
+    const data = await response.json();
+
+    if (data.cod === 200) {
+      displayWeather(data);
+    } else {
+      weatherInfo.innerHTML = '<p>City not found. Please try again.</p>';
+    }
+  } catch (error) {
+    console.error('Error fetching weather:', error);
+    weatherInfo.innerHTML = '<p>There was an error fetching the weather.</p>';
+  }
+}
+
+function displayWeather(data) {
+  const { name, main, weather } = data;
+  const temperature = main.temp;
+  const description = weather[0].description;
+  const icon = weather[0].icon;
+
+  weatherInfo.innerHTML = `
+    <h2>${name}</h2>
+    <img src="https://openweathermap.org/img/wn/${icon}.png" alt="${description}">
+    <p class="temp">${temperature}°C</p>
+    <p>${description}</p>
+  `;
+}
+
+// Handle the search functionality
+getWeatherButton.addEventListener('click', () => {
+  const city = cityInput.value.trim();
+  if (city) {
+    fetchWeather(city);
+  }
+});
+
+// Dark/Light Mode Toggle
+const themeToggleBtn = document.getElementById('theme-toggle');
+themeToggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  themeToggleBtn.textContent = document.body.classList.contains('dark-mode') ? '🌞' : '🌙';
+});
+
+// Fetch default weather for a default city (optional)
+fetchWeather('New York');
+
+
+========================================
+
+=== week05/weather app/style.css ===
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    font-weight: 600;
+  }
+  
+  p {
+    font-weight: 300;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Theme Toggle Button */
+  #theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #theme-toggle:hover {
+    opacity: 0.8;
+  }
+  
+  /* Weather Container */
+  .weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  #city-input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 250px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  #get-weather {
+    padding: 10px 20px;
+    background-color: #1e1e2f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  
+  #get-weather:hover {
+    background-color: #ff6f61;
+  }
+  
+  /* Weather Info */
+  .weather-info {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .weather-info h2 {
+    font-size: 2rem;
+  }
+  
+  .weather-info p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .weather-info .temp {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  body.dark-mode header {
+    background-color: #333;
+  }
+  
+  body.dark-mode .weather-info {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark-mode .weather-info .temp {
+    color: #ff6f61;
+  }
+  
+  body.dark-mode .search-container input,
+  body.dark-mode .search-container button {
+    border: 1px solid #fff;
+    background-color: #333;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    .weather-container {
+      padding: 10px;
+    }
+  
+    #city-input {
+      width: 200px;
+    }
+  
+    .weather-info {
+      width: 100%;
+    }
+  }
+  
+
+========================================
+
+=== week05/weather app/weather.html ===
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Weather</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Real-Time Weather</h1>
+      <p>Get current weather details for your city</p>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <section class="weather-container" id="weather-container">
+    <div class="search-container">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button id="get-weather">Get Weather</button>
+    </div>
+    <div id="weather-info" class="weather-info">
+      <p>Enter a city name to see the weather details.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Real-Time Weather | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+========================================
+
+=== week06/helloworld.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World with AngularJS</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+
+  <div ng-controller="myController">
+    <h1>Hello {{ name }}!</h1>
+    <input type="text" ng-model="name" placeholder="Enter your name" />
+  </div>
+
+  <script>
+    // Define AngularJS module and controller
+    var app = angular.module('myApp', []);
+    app.controller('myController', function($scope) {
+      $scope.name = "World"; // Default value
+    });
+  </script>
+
+</body>
+</html>
+
+
+========================================
+
+=== week06/my-app/.gitignore ===
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+========================================
+
+=== week06/my-app/README.md ===
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+========================================
+
+=== week06/my-app/package.json ===
+
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.4.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
+
+========================================
+
+=== week06/my-app/public/index.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+
+========================================
+
+=== week06/my-app/public/manifest.json ===
+
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+
+
+========================================
+
+=== week06/my-app/public/robots.txt ===
+
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+
+========================================
+
+=== week06/my-app/src/App.css ===
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 15px;
+}
+
+.nav-link {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+}
+
+.contact-container {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field, .textarea-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+
+========================================
+
+=== week06/my-app/src/App.js ===
+
+import React, { useState, useRef } from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import "./App.css"; // Import CSS file
+
+// Home Component
+const Home = () => <h2 className="heading">Welcome to the React App</h2>;
+
+// About Component
+const About = () => <h2 className="heading">About Us</h2>;
+
+// Contact Component with Form and State
+const Contact = () => {
+    const [name, setName] = useState("");
+    const [message, setMessage] = useState("");
+    const inputRef = useRef(null);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        alert(`Thank you, ${name}. Your message: "${message}" has been received.`);
+        setName("");
+        setMessage("");
+        inputRef.current.focus();
+    };
+
+    return (
+        <div className="contact-container">
+            <h2 className="heading">Contact Us</h2>
+            <form onSubmit={handleSubmit} className="contact-form">
+                <input 
+                    ref={inputRef} 
+                    type="text" 
+                    placeholder="Your Name" 
+                    value={name} 
+                    onChange={(e) => setName(e.target.value)} 
+                    className="input-field"
+                />
+                <br />
+                <textarea 
+                    placeholder="Your Message" 
+                    value={message} 
+                    onChange={(e) => setMessage(e.target.value)} 
+                    className="textarea-field"
+                />
+                <br />
+                <button type="submit" className="submit-button">Send</button>
+            </form>
+        </div>
+    );
+};
+
+// Navbar Component using Links
+const Navbar = () => {
+    return (
+        <nav className="navbar">
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/about" className="nav-link">About</Link>
+            <Link to="/contact" className="nav-link">Contact</Link>
+        </nav>
+    );
+};
+
+// App Component implementing Router, Routes, and Keys
+const App = () => {
+    return (
+        <Router>
+            <Navbar />
+            <div className="container">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+            </div>
+        </Router>
+    );
+};
+
+export default App;
+
+
+========================================
+
+=== week06/my-app/src/App.test.js ===
+
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+
+========================================
+
+=== week06/my-app/src/index.css ===
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+========================================
+
+=== week06/my-app/src/index.js ===
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+
+========================================
+
+=== week06/my-app/src/reportWebVitals.js ===
+
+const reportWebVitals = onPerfEntry => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
+    });
+  }
+};
+
+export default reportWebVitals;
+
+
+========================================
+
+=== week06/my-app/src/setupTests.js ===
+
+// jest-dom adds custom jest matchers for asserting on DOM nodes.
+// allows you to do things like:
+// expect(element).toHaveTextContent(/react/i)
+// learn more: https://github.com/testing-library/jest-dom
+import '@testing-library/jest-dom';
+
+
+========================================
+
+=== week06/react-demo/.gitignore ===
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+========================================
+
+=== week06/react-demo/README.md ===
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+========================================
+
+=== week06/react-demo/package.json ===
+
+{
+  "name": "react-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+
+
+========================================
+
+=== week06/react-demo/public/index.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+
+========================================
+
+=== week06/react-demo/public/manifest.json ===
+
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+
+
+========================================
+
+=== week06/react-demo/public/robots.txt ===
+
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+
+========================================
+
+=== week06/react-demo/src/App.css ===
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+========================================
+
+=== week06/react-demo/src/App.js ===
+
+import React, { useState } from 'react';
+
+function MarksCalculator() {
+  const [totalMarks, setTotalMarks] = useState('');
+  const [obtainedMarks, setObtainedMarks] = useState('');
+  const [percentage, setPercentage] = useState(null);
+  const [grade, setGrade] = useState('');
+
+  // Calculate percentage and grade
+  const calculatePercentage = () => {
+    const total = parseFloat(totalMarks);
+    const obtained = parseFloat(obtainedMarks);
+
+    if (total && obtained) {
+      const calculatedPercentage = (obtained / total) * 100;
+      setPercentage(calculatedPercentage);
+      setGrade(getGrade(calculatedPercentage));
+    } else {
+      alert("Please enter valid marks!");
+    }
+  };
+
+  // Determine the grade based on percentage
+  const getGrade = (percentage) => {
+    if (percentage >= 90) return 'A+';
+    else if (percentage >= 80) return 'A';
+    else if (percentage >= 70) return 'B+';
+    else if (percentage >= 60) return 'B';
+    else if (percentage >= 50) return 'C';
+    else return 'F';
+  };
+
+  return (
+    <div style={{ padding: '20px', maxWidth: '400px', margin: 'auto' }}>
+      <h2>Student Marks Percentage Calculator</h2>
+      <div style={{ marginBottom: '10px' }}>
+        <label>Total Marks: </label>
+        <input
+          type="number"
+          value={totalMarks}
+          onChange={(e) => setTotalMarks(e.target.value)}
+          placeholder="Enter total marks"
+          style={{ padding: '5px', width: '100%' }}
+        />
+      </div>
+      <div style={{ marginBottom: '10px' }}>
+        <label>Obtained Marks: </label>
+        <input
+          type="number"
+          value={obtainedMarks}
+          onChange={(e) => setObtainedMarks(e.target.value)}
+          placeholder="Enter obtained marks"
+          style={{ padding: '5px', width: '100%' }}
+        />
+      </div>
+      <button
+        onClick={calculatePercentage}
+        style={{
+          padding: '10px 20px',
+          backgroundColor: '#4CAF50',
+          color: 'white',
+          border: 'none',
+          cursor: 'pointer',
+          width: '100%',
+        }}
+      >
+        Calculate Percentage
+      </button>
+
+      {percentage !== null && (
+        <div style={{ marginTop: '20px' }}>
+          <h3>Result:</h3>
+          <p>Percentage: {percentage.toFixed(2)}%</p>
+          <p>Grade: {grade}</p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div className="App">
+      <MarksCalculator />
+    </div>
+  );
+}
+
+export default App;
+
+
+========================================
+
+=== week06/react-demo/src/App.test.js ===
+
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+
+========================================
+
+=== week06/react-demo/src/index.css ===
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+========================================
+
+=== week06/react-demo/src/index.js ===
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+
+========================================
+
+=== week06/react-demo/src/reportWebVitals.js ===
+
+const reportWebVitals = onPerfEntry => {
+  if (onPerfEntry && onPerfEntry instanceof Function) {
+    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
+      getCLS(onPerfEntry);
+      getFID(onPerfEntry);
+      getFCP(onPerfEntry);
+      getLCP(onPerfEntry);
+      getTTFB(onPerfEntry);
+    });
+  }
+};
+
+export default reportWebVitals;
+
+
+========================================
+
+=== week06/react-demo/src/setupTests.js ===
+
+// jest-dom adds custom jest matchers for asserting on DOM nodes.
+// allows you to do things like:
+// expect(element).toHaveTextContent(/react/i)
+// learn more: https://github.com/testing-library/jest-dom
+import '@testing-library/jest-dom';
+
+
+========================================
+
+=== week06/studentrec.html ===
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Record Application</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="studentApp">
+
+  <div ng-controller="studentController">
+    <h1>Student Record</h1>
+
+    <form name="studentForm" ng-submit="submitForm()" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" ng-model="student.name" name="name" required />
+      <span ng-show="studentForm.name.$touched && studentForm.name.$invalid">Name is required.</span>
+      <br><br>
+
+      <label for="rollNumber">Roll Number:</label>
+      <input type="text" id="rollNumber" ng-model="student.rollNumber" name="rollNumber" required />
+      <span ng-show="studentForm.rollNumber.$touched && studentForm.rollNumber.$invalid">Roll Number is required.</span>
+      <br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" ng-model="student.age" name="age" min="18" max="60" required />
+      <span ng-show="studentForm.age.$touched && studentForm.age.$invalid">Age must be between 18 and 60.</span>
+      <br><br>
+
+      <button type="submit" ng-disabled="studentForm.$invalid">Submit</button>
+    </form>
+
+    <h3>Student Details:</h3>
+    <p>Name: {{ student.name }}</p>
+    <p>Roll Number: {{ student.rollNumber }}</p>
+    <p>Age: {{ student.age }}</p>
+
+  </div>
+
+  <script>
+    var app = angular.module('studentApp', []);
+    
+    app.controller('studentController', function($scope) {
+      // Initialize student object
+      $scope.student = {};
+
+      // Submit form data
+      $scope.submitForm = function() {
+        if ($scope.studentForm.$valid) {
+          alert("Form Submitted!\nName: " + $scope.student.name + "\nRoll Number: " + $scope.student.rollNumber + "\nAge: " + $scope.student.age);
+        }
+      };
+    });
+  </script>
+
+</body>
+</html>
+
+
+========================================
+
+=== week09/studentform.html ===
+
+<!DOCTYPE html>
+<html lang="en" ng-app="studentApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Records</title>
+  <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+  <style>
+    .error { color: red; }
+    .valid { color: green; }
+  </style>
+</head>
+<body ng-controller="StudentController">
+
+  <h2>Student Registration</h2>
+
+  <!-- Student Registration Form -->
+  <form name="studentForm" ng-submit="submitForm()" novalidate>
+    <label for="name">Student Name:</label>
+    <input type="text" id="name" ng-model="student.name" name="name" required ng-class="{'valid': studentForm.name.$valid, 'error': studentForm.name.$invalid}" />
+    <span class="error" ng-show="studentForm.name.$touched && studentForm.name.$invalid">Name is required.</span>
+    <br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" ng-model="student.age" name="age" required min="5" max="100" ng-class="{'valid': studentForm.age.$valid, 'error': studentForm.age.$invalid}" />
+    <span class="error" ng-show="studentForm.age.$touched && studentForm.age.$invalid">Age is required and should be between 5 and 100.</span>
+    <br><br>
+
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" ng-model="student.grade" name="grade" required ng-class="{'valid': studentForm.grade.$valid, 'error': studentForm.grade.$invalid}" />
+    <span class="error" ng-show="studentForm.grade.$touched && studentForm.grade.$invalid">Grade is required.</span>
+    <br><br>
+
+    <button type="submit" ng-disabled="studentForm.$invalid">Submit</button>
+  </form>
+
+  <h3>Student Records:</h3>
+  <ul>
+    <li ng-repeat="student in students">
+      <strong>Name:</strong> {{ student.name }} | <strong>Age:</strong> {{ student.age }} | <strong>Grade:</strong> {{ student.grade }}
+    </li>
+  </ul>
+
+  <script>
+    angular.module('studentApp', [])
+      .controller('StudentController', function($scope) {
+        // Initialize an empty array for students
+        $scope.students = [];
+        
+        // Create a function to handle form submission
+        $scope.submitForm = function() {
+          // If form is valid, add the student data to the array
+          if ($scope.studentForm.$valid) {
+            $scope.students.push({
+              name: $scope.student.name,
+              age: $scope.student.age,
+              grade: $scope.student.grade
+            });
+            // Reset the form
+            $scope.studentForm.$setPristine();
+            $scope.studentForm.$setUntouched();
+            $scope.student = {}; // Clear the student model
+          } else {
+            alert('Please fill out the form correctly.');
+          }
+        };
+      });
+  </script>
+
+</body>
+</html>
+
+
+========================================
+
+=== week10/app.js ===
+
+// file: app.js
+
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+// Middleware
+app.use(express.json());
+
+// Routes
+app.get('/', (req, res) => {
+  res.send('Hello from Express!');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
+
+
+========================================
+
+=== week10/callbackExample.js ===
+
+// file: callbackExample.js
+
+function greeting(name, callback) {
+    console.log(`Hello, ${name}!`);
+    callback();
+  }
+  
+  function afterGreeting() {
+    console.log('This is a callback function.');
+  }
+  
+  greeting('Atharva', afterGreeting);
+  
+
+========================================
+
+=== week10/eventLoopExample.js ===
+
+// file: eventLoopExample.js
+
+console.log('Start');
+
+setTimeout(() => {
+  console.log('Callback after 2 seconds');
+}, 2000);
+
+console.log('End');
+
+
+========================================
+
+=== week10/mongoApp.js ===
+
+// file: mongoApp.js
+
+const mongoose = require('mongoose');
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+// Middleware to parse JSON data
+app.use(express.json());
+
+// MongoDB connection
+mongoose.connect('mongodb://localhost:27017/testdb', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => {
+  console.log('MongoDB connected.');
+}).catch(err => {
+  console.log(err);
+});
+
+// User Schema
+const userSchema = new mongoose.Schema({
+  name: String,
+  email: String
+});
+
+// User Model
+const User = mongoose.model('User', userSchema);
+
+// POST /adduser route
+app.post('/adduser', async (req, res) => {
+  try {
+    const { name, email } = req.body;
+
+    // Create a new user document
+    const newUser = new User({ name, email });
+
+    // Save the user to MongoDB
+    await newUser.save();
+
+    // Respond with success
+    res.status(201).json({ message: 'User added successfully!' });
+  } catch (err) {
+    // Respond with error
+    res.status(500).json({ error: 'Failed to add user', message: err.message });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
+
+
+========================================
+

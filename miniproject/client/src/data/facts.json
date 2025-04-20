@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "icon": "♻️",
+      "title": "50 Million Tons",
+      "description": "Over 50 million tons of e-waste are produced globally each year."
+    },
+    {
+      "id": 2,
+      "icon": "🔋",
+      "title": "Toxic Materials",
+      "description": "E-waste contains harmful materials like lead and mercury."
+    },
+    {
+      "id": 3,
+      "icon": "🌱",
+      "title": "Only 17% Recycled",
+      "description": "Only 17% of global e-waste is properly recycled."
+    },
+    {
+      "id": 4,
+      "icon": "📱",
+      "title": "Short Device Lifespan",
+      "description": "Phones and laptops are often discarded within 2–3 years."
+    },
+    {
+      "id": 5,
+      "icon": "💡",
+      "title": "Awareness is Key",
+      "description": "Most people are unaware of how to properly dispose of electronics."
+    }
+  ]
+  
